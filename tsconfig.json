@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS", //dùng đc từ khóa import thay cho require
+    }
+}
