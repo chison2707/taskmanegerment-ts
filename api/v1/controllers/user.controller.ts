@@ -70,6 +70,15 @@ export const login = async (req: Request, res: Response) => {
     });
 };
 
+// [GET]/api/v1/users/detail
+export const detail = async (req: Request, res: Response) => {
+    res.json({
+        code: 200,
+        message: "Thành công",
+        infor: req["user"]
+    });
+};
+
 // // [POST]/api/v1/users/password/forgot
 // module.exports.forgotPassword = async (req, res) => {
 //     const email = req.body.email;
@@ -172,14 +181,7 @@ export const login = async (req: Request, res: Response) => {
 //     });
 // };
 
-// // [GET]/api/v1/users/detail
-// module.exports.detail = async (req, res) => {
-//     res.json({
-//         code: 200,
-//         message: "Thành công",
-//         infor: req.user
-//     });
-// };
+
 
 // // [GET]/api/v1/users/list
 // module.exports.list = async (req, res) => {
